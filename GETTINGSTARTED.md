@@ -16,7 +16,7 @@ Run the following command: ``git clone --recursive https://github.com/tiltedphoq
 
 The following requirements are needed as mentioned in the [Readme](https://github.com/tiltedphoques/TiltedOnline#windows):
 
-You will need [Visual Studio 2019](https://www.visualstudio.com/downloads/) (the community edition is freely available for download) and [Directx SDK](https://www.microsoft.com/en-us/download/details.aspx?id=6812) to build the project, aswell [Node.js](https://nodejs.org/en/) for the scripts to run properly.
+You will need [Visual Studio 2019](https://www.visualstudio.com/downloads/) (the community edition is freely available for download) and [DirectX SDK](https://www.microsoft.com/en-us/download/details.aspx?id=6812) to build the project, aswell [Node.js](https://nodejs.org/en/) for the scripts to run properly.
 
 ### Generating the project files
 
@@ -68,7 +68,7 @@ We currently use CEF for the main UI. To get CEF running, you will need to copy 
 
 If everything has worked as planned, a Tilted Reverse Console will pop up and the Imgui UI will be displayed on top of the game. After launching the game's Server.exe, you should be able to connect in-game by using the UI in the top left corner. Pressing RCTRL thrice should show your mouse, so youre able to use the UI.
 
-### (Optional: ) Server parameters
+### (Optional:) Server parameters
 
 Following are the parameters to start a server, they are all optional.
 
@@ -112,7 +112,7 @@ In the application, go to ``Branch -> New branch...``. Give this an appropriate 
 ## Understanding the code
 
 **Client** is the core mod it is broken down in Games/ Services/ and Systems/.
-- Games/ contains all code that is skyrim and fallout 4 related, it mostly contains class structures and hooks to different parts of the engine
+- Games/ contains all code that is Skyrim and Fallout 4 related, it mostly contains class structures and hooks to different parts of the engine
 - Services/ contains the different services that handle the actual sync, display, gameplay
 - Systems/ contains specific tasks like interpolation, consuming animations
 
