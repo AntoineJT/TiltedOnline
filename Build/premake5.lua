@@ -19,6 +19,7 @@ end
 include "../Libraries/TiltedCore/Build/module.lua"
 include "../Libraries/TiltedConnect/Build/module.lua"
 include "../Libraries/TiltedScript/Build/module.lua"
+include "../Libraries/DiscordGameSDK/Build/module.lua"
 
 if (os.istarget("Windows") == true) then
     include "../Libraries/TiltedReverse/Build/module.lua"
@@ -144,6 +145,7 @@ workspace ("Tilted Online Framework")
                     "../Libraries/TiltedUI/ThirdParty/CEF/",
                     "../Libraries/TiltedHooks/Code/hooks/include/",
                     "../Libraries/TiltedReverse/ThirdParty/",
+                    "../Libraries/DiscordGameSDK/Code/include/",
                     connectBasePath .. "/Code/connect/include/",
                     connectBasePath .. "/ThirdParty/GameNetworkingSockets/include/",
                     connectBasePath .. "/ThirdParty/protobuf/src/",
@@ -183,7 +185,8 @@ workspace ("Tilted Online Framework")
                     "sqlite3",
                     "imgui",
                     "Version",
-                    "snappy"
+                    "snappy",
+                    "DiscordGameSDK"
                 }
 
             
@@ -333,6 +336,7 @@ workspace ("Tilted Online Framework")
     premake.extensions.connect.generate()
     premake.extensions.script.generate()
     premake.extensions.core.generate()
+    premake.extensions.discordgamesdk.generate()
 
     if (os.istarget("Windows") == true) then
         premake.extensions.ui.generate()
