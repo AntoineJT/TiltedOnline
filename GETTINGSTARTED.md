@@ -54,7 +54,7 @@ DllDebug=Full/Path/To/FalloutTogether_d.dll
 ```
 
 For Skyrim SE, you will only need to add the full path in front of the `SkyrimSE.exe` and `.dll`. 
-This is only neccessary if you moved the .dll in your Skyrim SE/Fallout4 installation folder.
+This is only necessary if you moved the .dll in your Skyrim SE/Fallout4 installation folder.
 
 ### (Optional:) Shortcuts to binaries
 
